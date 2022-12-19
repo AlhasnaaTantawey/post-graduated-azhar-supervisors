@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context="azhar.supervisors.pg_azhar.ChangeTitleFragment"
+        android:gravity="center"
+        android:background="@mipmap/back2">
+        <TextView
+            android:id="@+id/textView_ChangeTitleFragment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="تغير بيانات المستخدم"
+            android:layout_margin="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="اسم المستخدم "
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:fontFamily="sans-serif-black" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="2"
+                    android:textAlignment="viewStart"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginRight="30dp"
+                    android:drawableRight="@drawable/ic_person_black_24dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/shapeemail"
+                    android:textStyle="bold"
+                    android:hint="ادخل اسم المستخد الجديد"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="كلمه المرور "
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:fontFamily="sans-serif-black" />
+
+                <EditText
+                    android:id="@+id/textView_password1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPassword"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableRight="@drawable/ic_lock_black_24dp"
+                    android:textColorHint="@color/white"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/shapeemail"
+                    android:textStyle="bold"
+                    android:hint="ادخل كلمه المرور الجديد"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="كلمه المرور "
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="19dp"
+                    android:fontFamily="sans-serif-black" />
+
+                <EditText
+                    android:id="@+id/textView_password2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPassword"
+                    android:layout_weight="2"
+                    android:textAlignment="viewStart"
+                    android:padding="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableRight="@drawable/ic_lock_black_24dp"
+                    android:layout_marginEnd="30dp"
+                    android:drawablePadding="10dp"
+
+                    android:background="@drawable/shapeemail"
+                    android:textStyle="bold"
+                    android:hint="تاكيد كلمه المرور الجديد"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textColorHint="@color/white"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/changeInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="90dp"
+                android:textSize="15dp"
+                android:text="تغيير"
+                android:backgroundTint="@color/redDard"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

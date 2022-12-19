@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="azhar.supervisors.pg_azhar.ui.reshershers.ResearchFragment"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_personal_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/researches"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            />
+        <Spinner
+            android:id="@+id/spinner_filterResearcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragmentResearcherforsupervisor_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="10"
+           tools:listitem="@layout/researcher_group_view"
+          />
+    </LinearLayout>
+</layout>

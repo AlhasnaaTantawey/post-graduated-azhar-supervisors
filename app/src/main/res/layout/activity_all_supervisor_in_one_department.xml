@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <data>
+
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="azhar.supervisors.pg_azhar.AllSupervisorInOneDepartment"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activityForAllAupervisorOnOneDepartment_txt_DepartmentName"
+            tools:text="مشرفين قسم نظم"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/blue"
+            android:layout_margin="15dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/AllSupervisorInOneDepartment_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="10"
+            tools:listitem="@layout/supervisor_group_view"
+            android:layout_marginBottom="45dp"
+            />
+
+    </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/allSuperviosrForOneDepartment_floatingButton_admin"
+            android:layout_height="wrap_content"
+            android:text="الاداره"
+            app:backgroundTint="@color/blue"
+            android:layout_margin="30dp"
+            app:tint="@color/white"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+
+            />
+    </FrameLayout>
+</layout>

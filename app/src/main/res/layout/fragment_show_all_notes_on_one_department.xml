@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="azhar.supervisors.pg_azhar.ShowOrdersForSupervisor"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الملاحظات المقدمه"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/allNoteInOneDepartment_txtV_noteSupervisorInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="1dp"
+            android:background="@color/white">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    android:weightSum="6"
+                    >
+                <ImageView
+                    android:id="@+id/Request_groupView_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="10dp"
+                    android:src="@drawable/researcher"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/Request_groupView_txtv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                 android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/Request_groupView_image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25"
+                    android:text="ملاحظات خاصه ببيانات المشرف"
+                    android:layout_weight="5"/>
+
+                </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/allNoteInOneDepartment_txtV_noteResearcherInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="1dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints"
+                android:weightSum="6"
+                >
+
+                <ImageView
+                    android:id="@+id/Request_groupView_image2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="10dp"
+                    android:src="@drawable/researcher2"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/Request_groupView_image2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25"
+                    android:text="ملاحظات خاصه ببيانات الباحث" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/allNoteInOneDepartment_txtV_superviosrNoteForResearchers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="1dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints"
+                android:weightSum="6"
+                >
+
+        <ImageView
+            android:id="@+id/Request_groupView_image3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:src="@drawable/group_researcher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/Request_groupView_image3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            android:text="ملاحظات ارسلها المشرف خاصه بالباحثين"
+            />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/allNoteInOneDepartment_txtV_researcherNoteForSuperviosrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="1dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints"
+                android:weightSum="6"
+                >
+
+                <ImageView
+                    android:id="@+id/Request_groupView_image4"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="10dp"
+                    android:src="@drawable/group_superviosors__1_"
+                    app:civ_border_color="#FF000000"
+                    android:scaleType="fitXY"
+                    app:civ_border_width="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/Request_groupView_image4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25"
+                    android:text="ملاحظات ارسلها الباحث خاصه بالمشرفين"
+                    />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</layout>

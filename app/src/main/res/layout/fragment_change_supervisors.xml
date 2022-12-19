@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="azhar.supervisors.pg_azhar.ChangeSupervisorsFragment"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textView_ChangeSupervisorFragment_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:fontFamily="sans-serif-black"
+                android:text="طلب تغير المشرفين"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textColor="@color/blue"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="40dp"
+                android:fontFamily="sans-serif-black"
+                android:text="من"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_ChangeSupervisorFragment_currentSupervisors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                tools:text="اسلام بشير محمد "
+                android:textColor="@color/black"
+                android:background="@drawable/black_border"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="40dp"
+                android:fontFamily="sans-serif-black"
+                android:text="الى "
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editText_ChangeSupervisorFragment_firstSuper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginRight="30dp"
+                android:hint="المشرف الاول "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textColorHint="@color/gray"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/black_border"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/editText_ChangeSupervisorFragment_secondSuper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:textColorHint="@color/gray"
+                android:layout_marginRight="30dp"
+                android:textStyle="bold"
+                android:hint="المشرف الثانى "
+                android:textColor="@color/black"
+                android:background="@drawable/black_border"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="اسباب تعديل لجنه الاشراف  "
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_ChangeSupervisorFragment_resons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:textColorHint="@color/gray"
+                android:layout_marginRight="30dp"
+                android:textStyle="bold"
+                android:hint="اسباب التعديل "
+                android:textColor="@color/black"
+                android:background="@drawable/black_border"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/button_ChangeSupervisorFragment_sedRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@color/blue"
+                android:text="ارسال الطلب"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:layout_marginBottom="80dp"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context="azhar.supervisors.pg_azhar.ReportInformationFragment"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text=" بيانات التقرير العلمى"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="القسم:"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/blue"
+                />
+            <TextView
+                android:id="@+id/departmentName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="قسم نظم وحاسبات"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="اسم المشرف:"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/blue"
+
+                />
+            <TextView
+                android:id="@+id/noteInformationFragment_txtV_supervisorName"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text=" اشرف عبد الرحمن المراكبى"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="اسم الباحث:"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/blue"
+                />
+            <TextView
+                android:id="@+id/noteInformationFragment_txtV_ResaercherName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text=" محمد عاطف النبوى"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/personalInformation_txtv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text=" التقرير العلمى"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="الباحث منتطم فى الحضور ومقابله السيد المشرف "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/reportInformationFragment_checbox_firstcheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="الباحث مجتهد فى جمع الماده العلميه"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/reportInformationFragment_checbox_secondcheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="الباحث قارب من الانتهاء من رسالته خلال المده القانونيه"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/reportInformationFragment_checbox_thirdcheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="اوصى بانذار الباحث لعدم الجديه"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/reportInformationFragment_checbox_fourthcheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="الباحث جاد وقد انهى من كتابه عدد معين من ابواب الرساله"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/reportInformationFragment_checbox_fifthcheck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="عدد ابواب الرساله التى كتبها الباحث"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reportInformationFragment_editText_numberOfWriting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="15"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

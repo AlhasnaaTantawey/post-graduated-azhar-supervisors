@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/adminMenu_notes"
+        android:icon="@drawable/note_balck_and_white"
+        android:title=" عرض الملاحظات"
+        />
+
+    <item
+        android:id="@+id/adminMenu_requests"
+        android:title="عرض الطلبات"
+        android:icon="@drawable/ic_baseline_border_color_24" />
+
+    <item
+        android:id="@+id/adminMenu_reports"
+        android:title="عرض التقارير"
+        android:icon="@drawable/report" />
+</menu>

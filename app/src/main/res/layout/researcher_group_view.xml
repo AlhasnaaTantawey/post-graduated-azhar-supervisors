@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/researcher2"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="1dp"
+              />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:id="@+id/researcher_groupView_txtv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                tools:text="اسلام بشير محمد  " />
+
+            <TextView
+                android:id="@+id/researcher_groupView_txtv_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/graysuptitle"
+                android:textSize="13dp"
+                android:layout_marginBottom="10dp"
+                tools:text="كليه الهندسه جامعه الازهر "
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:weightSum="2"
+                >
+
+            <TextView
+                android:id="@+id/supervisor_groupView_txtv_qualificationGrad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                tools:text="ماجستير" />
+
+            <TextView
+                android:id="@+id/supervisor_groupView_txtv_isgranted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textSize="15dp"
+
+                android:textStyle="bold"
+                android:layout_weight="1"
+                tools:text="منح" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/researcher_groupview_Linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="9"
+
+             >
+
+                <TextView
+                    android:id="@+id/researcher_groupview_txtv_numberofyears"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="عدد السنوات:"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/researcher_groupview_txtv_numberofyearsValue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingStart="5dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:text="5" />
+
+                <TextView
+                    android:id="@+id/researcher_groupview_txtv_numberofExtendYears"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="عدد المد:"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/researcher_groupview_txtv_numberofExtendsYearsValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="5"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/researcher_groupview_txtv_numberofReports"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="عدد التقارير:"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:layout_weight="3"
+                    android:textStyle="bold"
+                  />
+
+                <TextView
+                    android:id="@+id/researcher_groupview_txtv_numberofReportsValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="5"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/researcher_groupview_txtv_numberofexpands"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="المصروفات:"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    android:id="@+id/researcher_groupview_txtv_numberofExpandsValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="5"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

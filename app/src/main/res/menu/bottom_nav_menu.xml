@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_Personal_data"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="البيانات الشخصيه"
+        />
+
+    <item
+        android:id="@+id/navigation_researchers"
+        android:title="الباحثين"
+        android:icon="@drawable/ic_baseline_supervisor_account_24" />
+
+    <item
+        android:id="@+id/navigation_supervisorRequest"
+        android:title="الطلبات"
+        android:icon="@drawable/ic_baseline_border_color_24" />
+
+</menu>

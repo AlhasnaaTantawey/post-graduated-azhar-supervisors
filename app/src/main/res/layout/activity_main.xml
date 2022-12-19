@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/back2"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:src="@drawable/azhar"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp" />
+
+        <EditText
+            android:id="@+id/editText_username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:drawableRight="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/usernameText"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textview_usernameIsEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="@string/usernameIsEmptyText"
+            android:paddingRight="20dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+
+            />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapeemail"
+            android:drawableRight="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/passwordText"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/textView_passwordIsEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="@string/passwordIsEmptyText"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            android:paddingRight="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shapelogin"
+            android:text="@string/buttonLoginText"
+            android:backgroundTint="@color/blue"
+            android:onClick="loginAction"/>
+
+    </LinearLayout>
+</layout>

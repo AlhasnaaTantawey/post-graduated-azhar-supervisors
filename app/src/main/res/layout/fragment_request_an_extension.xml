@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="azhar.supervisors.pg_azhar.RequestAnExtensionFragment"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/textView_requestAnExtensionFragment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="طلب مد"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox_requestAnExtensionFragment_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="104dp"
+            android:fontFamily="sans-serif-black"
+            android:text="مد عام سادس"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/requestAnExtensionFragment_textView_sixDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginStart="35dp"
+            />
+
+
+
+        <CheckBox
+            android:id="@+id/checkBox3_requestAnExtensionFragment_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:text="مد عام سابع"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/requestAnExtensionFragment_textView_sevenDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginStart="35dp"
+
+            />
+        <CheckBox
+            android:id="@+id/checkBox2_requestAnExtensionFragment_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+
+            android:text="مد عام ثامن "
+
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/requestAnExtensionFragment_textView_eightDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginStart="35dp"
+
+            />
+        <Button
+            android:id="@+id/button_requestAnExtensionFragment_sendRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="ارسال الطلب"
+            android:fontFamily="sans-serif-black"
+            android:textSize="14dp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+
+            />
+
+
+    </LinearLayout>
+</layout>

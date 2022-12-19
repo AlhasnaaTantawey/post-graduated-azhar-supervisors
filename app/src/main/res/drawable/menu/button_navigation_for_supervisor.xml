@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/menu_navigationButton_personalinformationForSupervisor"
+    android:title="البيانات الشخصيه"
+    android:icon="@drawable/ic_baseline_person_24"
+    android:enabled="true"
+    />
+    <item
+        android:id="@+id/menu_navigationButton_ResercherForSupervisor"
+        android:title="الباحثين"
+        android:icon="@drawable/ic_baseline_supervisor_account_24"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/menu_navigationButton_OrdersForSupervisor"
+        android:title="متابعه الطلبات"
+        android:icon="@drawable/ic_baseline_add_task_24"
+        android:enabled="true"
+        />
+</menu>

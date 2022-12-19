@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PG-azhar</string>
+    <string name="usernameText" translatable="false">اسم المستخدم</string>
+    <string name="passwordText" translatable="false">رمز المرور</string>
+    <string name="usernameIsEmptyText" translatable="false">ادخل اسم المستخدم!</string>
+    <string name="passwordIsEmptyText" translatable="false">ادخل رمز المرور!</string>
+    <string name="buttonLoginText" translatable="false">تسجيل الدخول</string>
+    <string name="title_activity_supervisor" translatable="false">SupervisorActivity</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="personalData" translatable="false">البيانات الشخصيه</string>
+    <string name="name" translatable="false">الاسم:</string>
+    <string name="researches" translatable="false">الباحثين</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="toolbar_menu_logout" translatable="false">تسجيل الخروج</string>
+    <string name="donothave" translatable="false"> لم يحصل</string>
+    <string name="doctorate" translatable="false">دكتوراه</string>
+    <string name="masters" translatable="false">ماجستير</string>
+    <string name="granted" translatable="false">منح</string>
+    <string name="continous" translatable="false">مستمر</string>
+    <string name="cancelled" translatable="false">مفصول</string>
+    <string name="textForSupervisorNote" translatable="false">اذا كان هناك اى من البيانات الشخصيه او البيانات العلميه الخاصه بالمشرف غير صحيحه فرجاء كتابه البيانات الصحيحه هنا وسيتم مراجعتها وتصحيحها</string>
+    <string name="textForResearcherNote" translatable="false">اذا كان هناك اى من العلومات الخاصه بالباحث غير صحيحه برجاء كتابه البيانات الصحيحه هنا وسيتم مراجعتها وارسالها</string>
+    <string name="changeInformtions">تغير البيانات</string>
+</resources>

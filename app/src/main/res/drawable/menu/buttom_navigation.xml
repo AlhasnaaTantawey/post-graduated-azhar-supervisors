@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+   android:id="@+id/menu_personalInformationForResercher"
+    android:title="البيانات الشخصيه"
+    android:icon="@drawable/ic_baseline_person_24"
+    android:enabled="true"
+    />
+    <item
+        android:id="@+id/menu_expenses"
+        android:title="سداد المصروفات"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/menu_orders"
+        android:title=" متابعه الطلبات"
+        android:icon="@drawable/ic_baseline_add_task_24"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/menu_ForMakeMeet"
+        android:title="متطلبات التشكيل"
+        android:icon="@drawable/extra_icon"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/menu_supervisor"
+        android:title="المشرفين"
+        android:icon="@drawable/ic_baseline_supervisor_account_24"
+        android:enabled="true"
+        />
+
+</menu>

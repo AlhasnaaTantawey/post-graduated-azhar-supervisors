@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/extend"
+        android:title="طلب مد" />
+
+    <item
+        android:id="@+id/change_title"
+        android:title="طلب تغير عنوان" />
+
+    <item
+        android:id="@+id/change_supervisor"
+        android:title="طلب تغير مشرفين" />
+</menu>

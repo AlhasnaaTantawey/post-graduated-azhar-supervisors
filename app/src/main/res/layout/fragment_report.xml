@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="azhar.supervisors.pg_azhar.ReportFragment">
+
+        <TextView
+            android:id="@+id/personalInformation_txtv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="تقرير علمى"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:padding="10dp"
+                    android:text="الباحث منتطم فى الحضور ومقابله السيد المشرف "
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/researcherFragment_checbox_firstcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="الباحث مجتهد فى جمع الماده العلميه"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/researcherFragment_checbox_secondcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="الباحث قارب من الانتهاء من رسالته خلال المده القانونيه"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/researcherFragment_checbox_thirdcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="اوصى بانذار الباحث لعدم الجديه"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/researcherFragment_checbox_fourthcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="الباحث جاد وقد انهى من كتابه عدد معين من ابواب الرساله"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/researcherFragment_checbox_fifthcheck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="عدد ابواب الرساله التى كتبها الباحث"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/researcherFragment_editText_numberOfWriting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="ادخل العدد"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/researcherStatefragment_btn_sendState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/blue"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:text="ارسال حاله الطالب"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+    </layout>

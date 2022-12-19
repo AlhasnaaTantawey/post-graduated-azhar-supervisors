@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PG_azhar</string>
+    <string-array name="spinner_items">
+        <item>طلب تغير عنوان </item>
+        <item>طلب تغير مشرف </item>
+        <item>طلب مد </item>
+        <item>طلب منح </item>
+        <item>طلب تشكيل  </item>
+        <item>طلب فصل </item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

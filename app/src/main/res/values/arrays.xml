@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_filterResearchers">
+        <item>عرض الكل </item>
+        <item>مستمر</item>
+        <item>منح </item>
+        <item>مفصول </item>
+        <item>غير مسجل</item>
+    </string-array>
+
+        <string-array name="list_of_countries">
+            <item>مصر </item>
+            <item>السعوديه</item>
+            <item>المانيا </item>
+            <item>امريكا </item>
+        </string-array>
+    </resources>

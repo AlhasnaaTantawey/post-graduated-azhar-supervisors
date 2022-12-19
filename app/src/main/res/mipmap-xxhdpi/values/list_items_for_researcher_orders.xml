@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner_items_for_researcher">
+        <item>طلب افاده</item>
+        <item>طلب شهاده</item>
+        <item>تعديل عنوان </item>
+
+    </string-array>
+</resources>
